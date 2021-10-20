@@ -30,5 +30,62 @@
 		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
 		<meta name="theme-color" content="#ffffff" />
 	</head>
-	<body></body>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="/" class="header__logo">
+					<img
+						src="/images/logo.png"
+						alt="Zainoo company logo"
+						class="header__logo-image"
+					/>
+				</a>
+				<nav class="header__navigation">
+					<div class="header__tools">
+						<button
+							class="header__tool-button icon-button"
+							aria-label="Search"
+							title="Search"
+						>
+							<svg class="icon-button__icon">
+								<use href="/icons/icon-sprite.svg#search"></use>
+							</svg>
+						</button>
+						<button
+							class="header__tool-button icon-button"
+							aria-label="Cart"
+							title="Cart"
+						>
+							<svg class="icon-button__icon">
+								<use href="/icons/icon-sprite.svg#cart"></use>
+							</svg>
+						</button>
+						<button
+							class="header__tool-button icon-button"
+							aria-label="User profile"
+							title="User profile"
+						>
+							<svg class="icon-button__icon">
+								<use href="/icons/icon-sprite.svg#user"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="header__menu">
+						<div class="header__links">
+							<a href="/" class="header__link-item"
+								>manufacturing</a
+							>
+							<a href="/" class="header__link-item">packaging</a>
+							<a href="/" class="header__link-item">team</a>
+						</div>
+						<div class="header__socials">
+							<a href="/" class="header__social-link">fb</a>
+							<a href="/" class="header__social-link">tw</a>
+							<a href="/" class="header__social-link">in</a>
+						</div>
+					</div>
+				</nav>
+			</header>
+		</div>
+	</body>
 </html>
