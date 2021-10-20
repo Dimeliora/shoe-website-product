@@ -12,7 +12,7 @@ html {
 body {
 	height: 100%;
 	margin: 0;
-	padding: 105px 80px;
+	padding: 55px 40px;
 	background-color: #dee1e6;
 	font-family: "Sofia Pro", sans-serif;
 	font-weight: 400;
@@ -26,6 +26,10 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
+}
+
+main {
+	height: 100%;
 }
 
 .container {
