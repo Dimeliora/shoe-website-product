@@ -84,22 +84,16 @@
 	}
 
 	&__picture {
-		flex-grow: 1;
-
-		@media screen and (max-width: $xxl) {
-			position: absolute;
-			bottom: 25px;
-			right: 50px;
-			width: 80%;
-			margin: 0 auto;
-		}
-
-		@media screen and (max-width: $xl) {
-			position: static;
-		}
+		position: absolute;
+		bottom: 25px;
+		right: 50px;
+		width: 80%;
 
 		@media screen and (max-width: $lg) {
+			flex-grow: 1;
+			position: static;
 			width: 100%;
+			margin: 0 auto;
 		}
 	}
 
