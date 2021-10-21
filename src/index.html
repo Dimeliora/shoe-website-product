@@ -109,7 +109,54 @@
 					</div>
 					<div class="sidebar__scroll-notice">Scroll down</div>
 				</section>
-				<section class="product"></section>
+
+				<section class="product">
+					<div class="product__carousel">
+						<div class="product__item">
+							<div class="product__info">
+								<div class="product__about">The best looks; Top Comfort</div>
+								<h2 class="product__title">Comfy Maxer</h2>
+								<p class="product__description">
+									Our shoes fuse together an insole that cushions every move,
+									laces that you’ll never need to tie again, and an
+									odor-fighting copper thread lining.
+								</p>
+								<div class="product__buttons">
+									<button class="product__add-to-cart button">
+										<svg class="button__icon">
+											<use href="/icons/icon-sprite.svg#bag" />
+										</svg>
+										<span class="button__label">Add To Cart</span>
+									</button>
+									<button class="product__watch button">
+										<svg class="button__icon">
+											<use href="/icons/icon-sprite.svg#play" />
+										</svg>
+										<span class="button__label">Watch Intro</span>
+									</button>
+								</div>
+							</div>
+							<div class="product__picture">
+								<picture>
+									<source
+										srcset="
+											/images/product-1@1x.webp,
+											/images/product-1@1x.webp 2x
+										"
+										type="image/webp"
+									/>
+									<img
+										src="/images/product-1@1x.png"
+										srcset="/images/product-1@1x.png 2x"
+										alt="Comfi Maxer Shoe"
+										class="product__image"
+									/>
+								</picture>
+							</div>
+						</div>
+						<div class="product__pagination">01 / 04</div>
+					</div>
+				</section>
 			</main>
 		</div>
 	</body>

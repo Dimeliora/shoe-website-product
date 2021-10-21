@@ -1,2 +1,129 @@
 .product {
+	flex-grow: 1;
+	padding: 0 55px 0;
+
+	@media screen and (max-width: $lg) {
+		padding: 0 35px 0;
+	}
+
+	&__carousel {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		padding-bottom: 25px;
+	}
+
+	&__info {
+		position: relative;
+		z-index: 100;
+		color: $black-op4;
+		font-size: 2.1rem;
+		line-height: 3.2rem;
+
+		@media screen and (max-width: $xxl) {
+			max-width: 525px;
+		}
+
+		@media screen and (max-width: $xl) {
+			max-width: none;
+		}
+
+		@media screen and (max-width: $lg) {
+			font-size: 1.8rem;
+			line-height: 2.8rem;
+		}
+	}
+
+	&__title {
+		position: relative;
+		width: fit-content;
+		color: $black;
+		font-size: 6.2rem;
+		font-weight: 300;
+		line-height: 7rem;
+
+		&::after {
+			content: "®";
+			position: absolute;
+			top: 0;
+			right: 0;
+			height: 1em;
+			transform: translate(100%, -100%);
+			color: $black;
+			font-size: 2.2rem;
+			font-weight: 300;
+		}
+
+		@media screen and (max-width: $lg) {
+			font-size: 4.8rem;
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		margin-top: 30px;
+	}
+
+	&__add-to-cart {
+		margin-right: 25px;
+	}
+
+	&__watch {
+		.button__icon {
+			fill: #fff;
+			stroke: #030303;
+		}
+	}
+
+	&__picture {
+		flex-grow: 1;
+
+		@media screen and (max-width: $xxl) {
+			position: absolute;
+			bottom: 25px;
+			right: 50px;
+			width: 80%;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: $xl) {
+			position: static;
+		}
+
+		@media screen and (max-width: $lg) {
+			width: 100%;
+		}
+	}
+
+	&__image {
+		display: block;
+		max-width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		object-fit: cover;
+
+		@media screen and (max-width: $xxl) {
+			width: 100%;
+		}
+
+		@media screen and (max-width: $xl) {
+			object-fit: contain;
+		}
+	}
+
+	&__pagination {
+		color: $gray;
+		font-size: 1.3rem;
+		font-weight: 700;
+		line-height: 1.5rem;
+		text-align: center;
+	}
 }

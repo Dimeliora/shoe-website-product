@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 
 	&__logo {
 		display: block;
@@ -31,7 +31,7 @@
 
 	&__menu {
 		position: absolute;
-		top: 190px;
+		top: 150px;
 		right: 50px;
 		bottom: 40px;
 		display: flex;
