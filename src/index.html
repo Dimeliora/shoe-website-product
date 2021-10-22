@@ -32,6 +32,7 @@
 	</head>
 	<body>
 		<div class="container">
+			<h1 class="visually-hidden">Zainoo Shoe store</h1>
 			<header class="header">
 				<a href="/" class="header__logo">
 					<img
@@ -41,6 +42,15 @@
 					/>
 				</a>
 				<nav class="header__navigation">
+					<button
+						class="header__close icon-button"
+						aria-label="Close navigation menu"
+					>
+						<svg class="icon-button__icon">
+							<use href="/icons/icon-sprite.svg#close"></use>
+						</svg>
+					</button>
+					<button class="header__sidemenu-button">Explore</button>
 					<div class="header__tools">
 						<button
 							class="header__tool-button icon-button"
@@ -83,9 +93,18 @@
 						</div>
 					</div>
 				</nav>
+				<button class="header__menu-button" aria-label="Navigation menu">
+					<span></span><span></span><span></span>
+				</button>
 			</header>
 			<main>
 				<section class="sidebar">
+					<h2 class="visually-hidden">Sidebar menu</h2>
+					<button class="sidebar__close icon-button" aria-label="Close sidebar">
+						<svg class="icon-button__icon">
+							<use href="/icons/icon-sprite.svg#close"></use>
+						</svg>
+					</button>
 					<nav class="sidebar__menu">
 						<a href="/" class="sidebar__link">Shoes</a>
 						<a href="/" class="sidebar__link">Bags</a>
@@ -138,11 +157,11 @@
 							<div class="product__picture">
 								<picture>
 									<source
-										srcset="/images/product-4@1x.webp"
+										srcset="/images/product-1@1x.webp"
 										type="image/webp"
 									/>
 									<img
-										src="/images/product-4@1x.png"
+										src="/images/product-1@1x.png"
 										alt="Comfi Maxer Shoe"
 										class="product__image"
 									/>

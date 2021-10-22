@@ -9,7 +9,6 @@
 	color: #030303;
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.5rem;
-	line-height: 1.8rem;
 	cursor: pointer;
 	transition: all 0.2s ease-out;
 
@@ -19,6 +18,12 @@
 		margin-right: 12px;
 		fill: #030303;
 		transition: fill 0.2s ease-out;
+		
+		@media screen and (max-width: $sm) {
+			width: 16px;
+			height: 16px;
+			margin-right: 8px;
+		}
 	}
 
 	&:focus-visible,
@@ -30,9 +35,23 @@
 		.button__icon {
 			fill: #fff;
 		}
+
+		@media screen and (max-width: $sm) {
+			background-color: #fff;
+			color: #030303;
+
+			.button__icon {
+				fill: #030303;
+			}
+		}
 	}
 
 	@media screen and (max-width: $lg) {
 		padding: 16px 20px;
+	}
+
+	@media screen and (max-width: $sm) {
+		padding: 8px 12px;
+		font-size: 1.3rem;
 	}
 }

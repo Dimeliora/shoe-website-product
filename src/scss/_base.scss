@@ -38,6 +38,10 @@ a:focus-visible,
 a:hover {
 	outline: none;
 	text-decoration: underline;
+
+	@media screen and (max-width: $sm) {
+		text-decoration: none;
+	}
 }
 
 .container {
@@ -47,6 +51,15 @@ a:hover {
 	height: 100%;
 	padding: 40px 50px;
 	background: #f5f5f5 url("/images/bg.webp") no-repeat center / cover;
+
+	@media screen and (max-width: $sm) {
+		padding: 20px;
+	}
+
+	@media screen and (max-height: $low) {
+		min-height: 100%;
+		height: auto;
+	}
 }
 
 .visually-hidden {

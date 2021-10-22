@@ -3,11 +3,36 @@
 	flex-direction: column;
 	justify-content: space-between;
 	flex-shrink: 0;
-	width: 230px;
 
-	// @media screen and (max-width: $lg) {
-	// 	width: 170px;
-	// }
+	@media screen and (max-width: $md) {
+		position: absolute;
+		top: 0;
+		left: -100vw;
+		bottom: 0;
+		z-index: 500;
+		justify-content: flex-start;
+		width: 50vw;
+		padding: 80px 20px 40px 50px;
+		background-color: #fff;
+		box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+		transition: left 0.3s ease-out;
+
+		&--active {
+			left: 0;
+		}
+	}
+
+	&__close {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 500;
+		display: none;
+
+		@media screen and (max-width: $sm) {
+			display: inline-block;
+		}
+	}
 
 	&__menu {
 		display: flex;
@@ -51,9 +76,9 @@
 		font-size: 4rem;
 		font-weight: 300;
 
-		// @media screen and (max-width: $lg) {
-		// 	font-size: 3.2rem;
-		// }
+		@media screen and (max-width: $md) {
+			display: none;
+		}
 	}
 
 	&__col--inversed {
@@ -100,5 +125,9 @@
 		padding-left: 20px;
 		font-size: 1.2rem;
 		line-height: 1.9rem;
+
+		@media screen and (max-width: $md) {
+			display: none;
+		}
 	}
 }
