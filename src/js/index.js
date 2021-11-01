@@ -1,5 +1,6 @@
 import { carousel } from "./carousel";
 import { menu } from "./menu";
+import { video } from "./video";
 
 window.addEventListener("DOMContentLoaded", () => {
 	carousel({
@@ -23,5 +24,11 @@ window.addEventListener("DOMContentLoaded", () => {
 		menuButtonSelector: ".header__menu-button",
 		menuActiveClass: "header__navigation--active",
 		menuButtonActiveClass: "header__menu-button--active",
+	});
+
+	video({
+		videoModalSelector: ".modal",
+		videoTriggersSelector: "button[data-video]",
+		videoModalCloseSelector: ".modal__close",
 	});
 });

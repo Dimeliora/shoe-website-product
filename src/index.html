@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Shoe Website Product Page</title>
-		<link rel="stylesheet" href="/styles.css">
+		<link rel="stylesheet" href="/styles.css" />
+		<script src="https://www.youtube.com/iframe_api" defer></script>
 		<script src="/script.js" defer></script>
-<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-<link rel="manifest" href="/icons/site.webmanifest">
-<link rel="shortcut icon" href="/icons/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/icons/browserconfig.xml">
-<meta name="theme-color" content="#ffffff"></head>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="/icons/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/icons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/icons/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="/icons/site.webmanifest" />
+		<link rel="shortcut icon" href="/icons/favicon.ico" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
 	<body>
 		<div class="container">
 			<h1 class="visually-hidden">Zainoo Shoe store</h1>
 			<header class="header">
 				<a href="/" class="header__logo">
-					<img src="/images/logo.png" alt="Zainoo company logo" class="header__logo-image">
+					<img
+						src="/images/logo.png"
+						alt="Zainoo company logo"
+						class="header__logo-image"
+					/>
 				</a>
 				<nav class="header__navigation">
 					<button class="header__sidemenu-button">Explore</button>
 					<div class="header__tools">
-						<button class="header__tool-button icon-button" aria-label="Search" title="Search">
+						<button
+							class="header__tool-button icon-button"
+							aria-label="Search"
+							title="Search"
+						>
 							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#search"/>
+								<use href="/icons/icon-sprite.svg#search" />
 							</svg>
 						</button>
-						<button class="header__tool-button icon-button" aria-label="Cart" title="Cart">
+						<button
+							class="header__tool-button icon-button"
+							aria-label="Cart"
+							title="Cart"
+						>
 							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#cart"/>
+								<use href="/icons/icon-sprite.svg#cart" />
 							</svg>
 						</button>
-						<button class="header__tool-button icon-button" aria-label="User profile" title="User profile">
+						<button
+							class="header__tool-button icon-button"
+							aria-label="User profile"
+							title="User profile"
+						>
 							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#user"/>
+								<use href="/icons/icon-sprite.svg#user" />
 							</svg>
 						</button>
 					</div>
@@ -63,7 +95,7 @@
 					<h2 class="visually-hidden">Sidebar menu</h2>
 					<button class="sidebar__close icon-button" aria-label="Close sidebar">
 						<svg class="icon-button__icon">
-							<use href="/icons/icon-sprite.svg#close"/>
+							<use href="/icons/icon-sprite.svg#close" />
 						</svg>
 					</button>
 					<nav class="sidebar__menu">
@@ -75,11 +107,11 @@
 					<div class="sidebar__info">
 						<div class="sidebar__slogan">
 							<div class="sidebar__col sidebar__col--inversed">
-								Extra <br>
+								Extra <br />
 								Care
 							</div>
 							<div class="sidebar__col-white">
-								Foot <br>
+								Foot <br />
 								Tech
 							</div>
 						</div>
@@ -91,20 +123,24 @@
 				</section>
 				<section class="product">
 					<div class="product__carousel">
-						<button class="
+						<button
+							class="
 								product__carousel-button product__carousel-button--prev
 								icon-button
-							">
+							"
+						>
 							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#left"/>
+								<use href="/icons/icon-sprite.svg#left" />
 							</svg>
 						</button>
-						<button class="
+						<button
+							class="
 								product__carousel-button product__carousel-button--next
 								icon-button
-							">
+							"
+						>
 							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#right"/>
+								<use href="/icons/icon-sprite.svg#right" />
 							</svg>
 						</button>
 						<div class="product__carousel-items">
@@ -120,13 +156,16 @@
 									<div class="product__buttons">
 										<button class="product__add-to-cart button">
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag"/>
+												<use href="/icons/icon-sprite.svg#bag" />
 											</svg>
 											<span class="button__label">Add To Cart</span>
 										</button>
-										<button class="product__watch button">
+										<button
+											class="product__watch button"
+											data-video="9_Hb6Pgf6KA"
+										>
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play"/>
+												<use href="/icons/icon-sprite.svg#play" />
 											</svg>
 											<span class="button__label">Watch Intro</span>
 										</button>
@@ -134,8 +173,15 @@
 								</div>
 								<div class="product__picture">
 									<picture>
-										<source srcset="/images/product-1@1x.webp" type="image/webp">
-										<img src="/images/product-1@1x.png" alt="Comfi Maxer Shoe" class="product__image">
+										<source
+											srcset="/images/product-1@1x.webp"
+											type="image/webp"
+										/>
+										<img
+											src="/images/product-1@1x.png"
+											alt="Comfi Maxer Shoe"
+											class="product__image"
+										/>
 									</picture>
 								</div>
 							</div>
@@ -153,13 +199,16 @@
 									<div class="product__buttons">
 										<button class="product__add-to-cart button">
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag"/>
+												<use href="/icons/icon-sprite.svg#bag" />
 											</svg>
 											<span class="button__label">Add To Cart</span>
 										</button>
-										<button class="product__watch button">
+										<button
+											class="product__watch button"
+											data-video="9jtkNI4ybHI"
+										>
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play"/>
+												<use href="/icons/icon-sprite.svg#play" />
 											</svg>
 											<span class="button__label">Watch Intro</span>
 										</button>
@@ -167,8 +216,15 @@
 								</div>
 								<div class="product__picture">
 									<picture>
-										<source srcset="/images/product-2@1x.webp" type="image/webp">
-										<img src="/images/product-2@1x.png" alt="Adidas Original Shoe" class="product__image">
+										<source
+											srcset="/images/product-2@1x.webp"
+											type="image/webp"
+										/>
+										<img
+											src="/images/product-2@1x.png"
+											alt="Adidas Original Shoe"
+											class="product__image"
+										/>
 									</picture>
 								</div>
 							</div>
@@ -186,13 +242,16 @@
 									<div class="product__buttons">
 										<button class="product__add-to-cart button">
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag"/>
+												<use href="/icons/icon-sprite.svg#bag" />
 											</svg>
 											<span class="button__label">Add To Cart</span>
 										</button>
-										<button class="product__watch button">
+										<button
+											class="product__watch button"
+											data-video="KUETy2wFjyk"
+										>
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play"/>
+												<use href="/icons/icon-sprite.svg#play" />
 											</svg>
 											<span class="button__label">Watch Intro</span>
 										</button>
@@ -200,8 +259,15 @@
 								</div>
 								<div class="product__picture">
 									<picture>
-										<source srcset="/images/product-3@1x.webp" type="image/webp">
-										<img src="/images/product-3@1x.png" alt="Nike Shoe" class="product__image">
+										<source
+											srcset="/images/product-3@1x.webp"
+											type="image/webp"
+										/>
+										<img
+											src="/images/product-3@1x.png"
+											alt="Nike Shoe"
+											class="product__image"
+										/>
 									</picture>
 								</div>
 							</div>
@@ -218,13 +284,16 @@
 									<div class="product__buttons">
 										<button class="product__add-to-cart button">
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag"/>
+												<use href="/icons/icon-sprite.svg#bag" />
 											</svg>
 											<span class="button__label">Add To Cart</span>
 										</button>
-										<button class="product__watch button">
+										<button
+											class="product__watch button"
+											data-video="R978P6kINf8"
+										>
 											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play"/>
+												<use href="/icons/icon-sprite.svg#play" />
 											</svg>
 											<span class="button__label">Watch Intro</span>
 										</button>
@@ -232,8 +301,15 @@
 								</div>
 								<div class="product__picture">
 									<picture>
-										<source srcset="/images/product-4@1x.webp" type="image/webp">
-										<img src="/images/product-4@1x.png" alt="Buffalo Shoe" class="product__image">
+										<source
+											srcset="/images/product-4@1x.webp"
+											type="image/webp"
+										/>
+										<img
+											src="/images/product-4@1x.png"
+											alt="Buffalo Shoe"
+											class="product__image"
+										/>
 									</picture>
 								</div>
 							</div>
@@ -242,6 +318,16 @@
 					</div>
 				</section>
 			</main>
+		</div>
+		<div class="modal">
+			<div class="modal__content">
+				<button class="modal__close icon-button">
+					<svg class="icon-button__icon">
+						<use href="/icons/icon-sprite.svg#close" />
+					</svg>
+				</button>
+				<div id="video"></div>
+			</div>
 		</div>
 	</body>
 </html>
