@@ -19,6 +19,10 @@ export const video = ({
 			width: "100%",
 			height: "100%",
 			videoId,
+			playerVars: {
+				host: "https://www.youtube.com",
+				origin: window.location.origin,
+			},
 			events: {
 				onReady: openVideoModalHandler,
 			},
