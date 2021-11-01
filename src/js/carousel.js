@@ -13,6 +13,10 @@ export const carousel = ({
 
 	let currentItemIdx = 1;
 
+	if (!carousel || carouselItems.length === 0) {
+		return;
+	}
+
 	const updateItemIdx = (step) => {
 		currentItemIdx += step;
 
@@ -35,6 +39,10 @@ export const carousel = ({
 	};
 
 	const updatePagination = () => {
+		if (!pagination) {
+			return;
+		}
+
 		const currentPage = String(currentItemIdx).padStart(2, "0");
 		const totalPages = String(carouselItems.length).padStart(2, "0");
 		pagination.textContent = `${currentPage} / ${totalPages}`;
