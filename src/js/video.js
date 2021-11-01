@@ -37,7 +37,7 @@ export const video = ({
 
 	videoTriggers.forEach((trigger) => {
 		trigger.addEventListener("click", (e) => {
-			const videoId = e.target.dataset.video;
+			const videoId = e.currentTarget.dataset.video;
 
 			if (!videoPlayer) {
 				initializeVideoPlayer(videoId);
