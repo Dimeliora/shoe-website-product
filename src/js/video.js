@@ -1,4 +1,5 @@
 export const video = ({
+	videoContainerId,
 	videoModalSelector,
 	videoTriggersSelector,
 	videoModalCloseSelector,
@@ -9,8 +10,12 @@ export const video = ({
 
 	let videoPlayer;
 
+	if (!videoModal || !videoContainerId) {
+		return;
+	}
+
 	const initializeVideoPlayer = (videoId) => {
-		videoPlayer = new YT.Player("video", {
+		videoPlayer = new YT.Player(videoContainerId, {
 			width: "100%",
 			height: "100%",
 			videoId,
@@ -47,11 +52,13 @@ export const video = ({
 		});
 	});
 
-	videoModalClose.addEventListener("click", closeVideoModalHandler);
-
 	videoModal.addEventListener("click", (e) => {
 		if (e.target === videoModal) {
 			closeVideoModalHandler();
 		}
 	});
+
+	if (videoModalClose) {
+		videoModalClose.addEventListener("click", closeVideoModalHandler);
+	}
 };

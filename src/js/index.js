@@ -27,6 +27,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 	video({
+		videoContainerId: 'video',
 		videoModalSelector: ".modal",
 		videoTriggersSelector: "button[data-video]",
 		videoModalCloseSelector: ".modal__close",
