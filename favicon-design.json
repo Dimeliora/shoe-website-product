@@ -9,7 +9,8 @@
 		}
 	},
 	"desktopBrowser": {
-		"design": "raw"
+		"design": "raw",
+		"backgroundColor": "#ffffff"
 	},
 	"windows": {
 		"pictureAspect": "noChange",

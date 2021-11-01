@@ -20,6 +20,10 @@
 		&--active {
 			left: 0;
 		}
+
+		@media screen and (max-width: $sm) {
+			width: 75vw;
+		}
 	}
 
 	&__close {
@@ -29,7 +33,7 @@
 		z-index: 500;
 		display: none;
 
-		@media screen and (max-width: $sm) {
+		@media screen and (max-width: $md) {
 			display: inline-block;
 		}
 	}
