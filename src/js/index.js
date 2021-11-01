@@ -41,7 +41,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	const products = document.querySelectorAll(".product__item");
 	const amountBadge = document.querySelector(".header__cart-badge");
 	products.forEach((product) => {
-		const item = product.querySelector(".product__image");
+		const item = product.querySelector(".product__picture");
 		const addButton = product.querySelector("[data-add-to-cart]");
 
 		addToCart({

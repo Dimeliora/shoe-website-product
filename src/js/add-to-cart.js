@@ -11,6 +11,7 @@ export const addToCart = ({ cart, item, amountBadge, addButton }) => {
       left: ${left}px;
       width: ${width}px;
       height: ${height}px;
+      margin: 0;
       transform-origin: 0 0;
       transition: all 0.7s ease-in-out;
     `;
