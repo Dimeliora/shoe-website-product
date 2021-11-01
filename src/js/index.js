@@ -1,8 +1,13 @@
 import { carousel } from "./carousel";
 import { menu } from "./menu";
 import { video } from "./video";
+import { addToCart } from "./add-to-cart";
 
 window.addEventListener("DOMContentLoaded", () => {
+	const cart = {
+		amount: 0,
+	};
+
 	carousel({
 		carouselSelector: ".product__carousel",
 		carouselItemsSelector: ".product__item",
@@ -27,9 +32,23 @@ window.addEventListener("DOMContentLoaded", () => {
 	});
 
 	video({
-		videoContainerId: 'video',
+		videoContainerId: "video",
 		videoModalSelector: ".modal",
 		videoTriggersSelector: "button[data-video]",
 		videoModalCloseSelector: ".modal__close",
+	});
+
+	const products = document.querySelectorAll(".product__item");
+	const amountBadge = document.querySelector(".header__cart-badge");
+	products.forEach((product) => {
+		const item = product.querySelector(".product__image");
+		const addButton = product.querySelector("[data-add-to-cart]");
+
+		addToCart({
+			cart,
+			item,
+			amountBadge,
+			addButton,
+		});
 	});
 });

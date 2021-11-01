@@ -79,11 +79,17 @@
 	}
 
 	&__tool-button {
+		position: relative;
 		margin-right: 25px;
 
 		&:last-child {
 			margin-right: 0;
 		}
+	}
+
+	&__cart-badge {
+		top: -5px;
+		right: -10px;
 	}
 
 	&__menu {
