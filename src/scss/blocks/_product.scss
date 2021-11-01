@@ -15,23 +15,70 @@
 	}
 
 	&__carousel {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	&__carousel-button {
+		position: absolute;
+		top: 45%;
+		z-index: 1000;
+		display: none;
+
+		&--next {
+			right: 0;
+		}
+
+		.icon-button__icon {
+			width: 25px;
+			height: 25px;
+			fill: #fff;
+			stroke: #000;
+		}
+
+		@media screen and (max-width: $sm) {
+			display: inline-block;
+		}
+	}
+
+	&__carousel-items {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
 	}
 
 	&__item {
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
 		display: flex;
 		flex-direction: column;
 		flex-grow: 1;
+		width: 100%;
+		height: 100%;
 		padding-bottom: 25px;
+		transition: opacity 0.6s ease-out;
+
+		&--active {
+			opacity: 1;
+
+			@media screen and (max-width: $sm) {
+				position: relative;
+			}
+		}
 	}
 
 	&__info {
 		position: relative;
 		z-index: 100;
+		display: flex;
+		flex-direction: column;
 		max-width: 525px;
+		min-height: 300px;
 		color: $black-op4;
 		font-size: 2.1rem;
 		line-height: 3.2rem;
@@ -41,11 +88,14 @@
 		}
 
 		@media screen and (max-width: $lg) {
+			min-height: 250px;
 			font-size: 1.8rem;
 			line-height: 2.8rem;
 		}
 
 		@media screen and (max-width: $sm) {
+			min-height: auto;
+			margin-bottom: 50px;
 			font-size: 1.6rem;
 			line-height: 2.4rem;
 		}
@@ -90,10 +140,17 @@
 		}
 	}
 
+	&__description {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+	}
+
 	&__buttons {
 		display: flex;
 		align-items: center;
-		margin-top: 30px;
+		margin-top: auto;
 
 		@media screen and (max-width: $sm) {
 			margin-top: 18px;
@@ -140,7 +197,7 @@
 		}
 
 		@media screen and (max-width: $sm) {
-			margin-top: 60px;
+			height: 200px;
 			padding: 0 20px;
 		}
 	}
