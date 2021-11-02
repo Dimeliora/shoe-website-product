@@ -3,6 +3,8 @@ export const video = ({
 	videoModalSelector,
 	videoTriggersSelector,
 	videoModalCloseSelector,
+	videoModalActiveClass,
+	videoModalErrorClass,
 }) => {
 	const videoModal = document.querySelector(videoModalSelector);
 	const videoTriggers = document.querySelectorAll(videoTriggersSelector);
@@ -15,24 +17,39 @@ export const video = ({
 	}
 
 	const initializeVideoPlayer = (videoId) => {
-		videoPlayer = new YT.Player(videoContainerId, {
-			width: "100%",
-			height: "100%",
-			videoId,
-			events: {
-				onReady: openVideoModalHandler,
-			},
-		});
+		const videoContainer = document.getElementById(videoContainerId);
+
+		try {
+			videoPlayer = new YT.Player(videoContainerId, {
+				width: "100%",
+				height: "100%",
+				videoId,
+				playerVars: {
+					autoplay: 1,
+				},
+				events: {
+					onReady: openVideoModalHandler,
+				},
+			});
+
+			videoContainer.classList.remove(videoModalErrorClass);
+		} catch (error) {
+			videoContainer.classList.add(videoModalErrorClass);
+			openVideoModalHandler();
+		}
 	};
 
 	const openVideoModalHandler = () => {
-		videoModal.classList.add("modal--visible");
-		videoPlayer.playVideo();
+		videoModal.classList.add(videoModalActiveClass);
 	};
 
 	const closeVideoModalHandler = () => {
-		videoModal.classList.remove("modal--visible");
-		videoPlayer.stopVideo();
+		if (videoPlayer) {
+			videoPlayer.destroy();
+			videoPlayer = null;
+		}
+
+		videoModal.classList.remove(videoModalActiveClass);
 	};
 
 	videoTriggers.forEach((trigger) => {
@@ -41,11 +58,7 @@ export const video = ({
 
 			if (!videoPlayer) {
 				initializeVideoPlayer(videoId);
-			} else {
-				videoPlayer.loadVideoById({ videoId });
 			}
-
-			videoModal.classList.add("modal--visible");
 		});
 	});
 

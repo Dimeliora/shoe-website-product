@@ -36,6 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
 		videoModalSelector: ".modal",
 		videoTriggersSelector: "button[data-video]",
 		videoModalCloseSelector: ".modal__close",
+		videoModalActiveClass: "modal--visible",
+		videoModalErrorClass: "modal__video--error",
 	});
 
 	const products = document.querySelectorAll(".product__item");
