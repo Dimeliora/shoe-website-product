@@ -1,362 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta
-			name="description"
-			content="Simple product page for Shoe Shop Website. For education purpose"
-		/>
-		<title>Shoe Website Product Page</title>
-		<link rel="stylesheet" href="/styles.css" />
-		<script src="https://www.youtube.com/iframe_api" async></script>
-		<script src="/script.js" defer></script>
-		<link
-			rel="apple-touch-icon"
-			sizes="180x180"
-			href="/icons/apple-touch-icon.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="/icons/favicon-32x32.png"
-		/>
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="16x16"
-			href="/icons/favicon-16x16.png"
-		/>
-		<link rel="manifest" href="/icons/site.webmanifest" />
-		<link rel="shortcut icon" href="/icons/favicon.ico" />
-		<meta name="msapplication-TileColor" content="#da532c" />
-		<meta name="msapplication-config" content="/icons/browserconfig.xml" />
-		<meta name="theme-color" content="#ffffff" />
-	</head>
-	<body>
-		<div class="container">
-			<h1 class="visually-hidden">Zainoo Shoe store</h1>
-			<header class="header">
-				<a href="/" class="header__logo">
-					<img
-						src="/images/logo.png"
-						alt="Zainoo company logo"
-						class="header__logo-image"
-					/>
-				</a>
-				<nav class="header__navigation">
-					<button class="header__sidemenu-button">Explore</button>
-					<div class="header__tools">
-						<button
-							class="header__tool-button icon-button"
-							aria-label="Search"
-							title="Search"
-						>
-							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#search" />
-							</svg>
-						</button>
-						<button
-							class="header__tool-button icon-button"
-							aria-label="Cart"
-							title="Cart"
-						>
-							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#cart" />
-							</svg>
-							<span class="header__cart-badge badge">1</span>
-						</button>
-						<button
-							class="header__tool-button icon-button"
-							aria-label="User profile"
-							title="User profile"
-						>
-							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#user" />
-							</svg>
-						</button>
-					</div>
-					<div class="header__menu">
-						<div class="header__links">
-							<a href="/" class="header__link-item">manufacturing</a>
-							<a href="/" class="header__link-item">packaging</a>
-							<a href="/" class="header__link-item">team</a>
-						</div>
-						<div class="header__socials">
-							<a href="/" class="header__social-link">fb</a>
-							<a href="/" class="header__social-link">tw</a>
-							<a href="/" class="header__social-link">in</a>
-						</div>
-					</div>
-				</nav>
-				<button class="header__menu-button" aria-label="Navigation menu">
-					<span></span><span></span><span></span>
-				</button>
-			</header>
-			<main>
-				<section class="sidebar">
-					<h2 class="visually-hidden">Sidebar menu</h2>
-					<button class="sidebar__close icon-button" aria-label="Close sidebar">
-						<svg class="icon-button__icon">
-							<use href="/icons/icon-sprite.svg#close" />
-						</svg>
-					</button>
-					<nav class="sidebar__menu">
-						<a href="/" class="sidebar__link">Shoes</a>
-						<a href="/" class="sidebar__link">Bags</a>
-						<a href="/" class="sidebar__link sidebar__link--new">Accessories</a>
-						<a href="/" class="sidebar__link">Support</a>
-					</nav>
-					<div class="sidebar__info">
-						<div class="sidebar__slogan">
-							<div class="sidebar__col sidebar__col--inversed">
-								Extra <br />
-								Care
-							</div>
-							<div class="sidebar__col-white">
-								Foot <br />
-								Tech
-							</div>
-						</div>
-						<div class="sidebar__more">
-							<a href="/" class="sidebar__more-link">learn more</a>
-						</div>
-					</div>
-					<div class="sidebar__scroll-notice">Scroll down</div>
-				</section>
-				<section class="product">
-					<div class="product__carousel">
-						<button
-							class="
-								product__carousel-button product__carousel-button--prev
-								icon-button
-							"
-							aria-label="Previous product"
-						>
-							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#left" />
-							</svg>
-						</button>
-						<button
-							class="
-								product__carousel-button product__carousel-button--next
-								icon-button
-							"
-							aria-label="Next product"
-						>
-							<svg class="icon-button__icon">
-								<use href="/icons/icon-sprite.svg#right" />
-							</svg>
-						</button>
-						<div class="product__carousel-items">
-							<div class="product__item">
-								<div class="product__info">
-									<div class="product__about">The best looks; Top Comfort</div>
-									<h2 class="product__title">Comfy Maxer</h2>
-									<p class="product__description">
-										Our shoes fuse together an insole that cushions every move,
-										laces that you’ll never need to tie again, and an
-										odor-fighting copper thread lining.
-									</p>
-									<div class="product__buttons">
-										<button
-											class="product__add-to-cart button"
-											data-add-to-cart
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag" />
-											</svg>
-											<span class="button__label">Add To Cart</span>
-										</button>
-										<button
-											class="product__watch button"
-											data-video="9_Hb6Pgf6KA"
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play" />
-											</svg>
-											<span class="button__label">Watch Intro</span>
-										</button>
-									</div>
-								</div>
-								<div class="product__picture">
-									<picture>
-										<source
-											srcset="/images/product-1@1x.webp"
-											type="image/webp"
-										/>
-										<img
-											src="/images/product-1@1x.png"
-											alt="Comfi Maxer Shoe"
-											class="product__image"
-										/>
-									</picture>
-								</div>
-							</div>
-							<div class="product__item">
-								<div class="product__info">
-									<div class="product__about">Think smart, look amazing</div>
-									<h2 class="product__title">Adidas Original</h2>
-									<p class="product__description">
-										Adidas is in fact recognised as a synonym for sneakers, as
-										the most popular brand that produces this kind of shoes. And
-										no wonder - the German brand has been manufacturing top
-										quality sports shoes with unique design for nearly one
-										hundred years.
-									</p>
-									<div class="product__buttons">
-										<button
-											class="product__add-to-cart button"
-											data-add-to-cart
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag" />
-											</svg>
-											<span class="button__label">Add To Cart</span>
-										</button>
-										<button
-											class="product__watch button"
-											data-video="9jtkNI4ybHI"
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play" />
-											</svg>
-											<span class="button__label">Watch Intro</span>
-										</button>
-									</div>
-								</div>
-								<div class="product__picture">
-									<picture>
-										<source
-											srcset="/images/product-2@1x.webp"
-											type="image/webp"
-										/>
-										<img
-											src="/images/product-2@1x.png"
-											alt="Adidas Original Shoe"
-											class="product__image"
-										/>
-									</picture>
-								</div>
-							</div>
-							<div class="product__item">
-								<div class="product__info">
-									<div class="product__about">Bring power to your steps</div>
-									<h2 class="product__title">Nike</h2>
-									<p class="product__description">
-										Nike is one of the global brands that seem an inherent part
-										of the contemporary sports fashion and footwear market.
-										Unique design and high quality of products mean that Nike
-										has a large group of loyal fans both among professional
-										sports performers and amateurs.
-									</p>
-									<div class="product__buttons">
-										<button
-											class="product__add-to-cart button"
-											data-add-to-cart
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag" />
-											</svg>
-											<span class="button__label">Add To Cart</span>
-										</button>
-										<button
-											class="product__watch button"
-											data-video="KUETy2wFjyk"
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play" />
-											</svg>
-											<span class="button__label">Watch Intro</span>
-										</button>
-									</div>
-								</div>
-								<div class="product__picture">
-									<picture>
-										<source
-											srcset="/images/product-3@1x.webp"
-											type="image/webp"
-										/>
-										<img
-											src="/images/product-3@1x.png"
-											alt="Nike Shoe"
-											class="product__image"
-										/>
-									</picture>
-								</div>
-							</div>
-							<div class="product__item">
-								<div class="product__info">
-									<div class="product__about">
-										You will be able to go anywhere
-									</div>
-									<h2 class="product__title">Buffalo</h2>
-									<p class="product__description">
-										Do you live streetstyle, but have a feeling that all
-										sneakers look similar? This means you are yet to discover
-										Buffalo London! This brand offers unique city shoes you just
-										can’t miss.
-									</p>
-									<div class="product__buttons">
-										<button
-											class="product__add-to-cart button"
-											data-add-to-cart
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#bag" />
-											</svg>
-											<span class="button__label">Add To Cart</span>
-										</button>
-										<button
-											class="product__watch button"
-											data-video="R978P6kINf8"
-										>
-											<svg class="button__icon">
-												<use href="/icons/icon-sprite.svg#play" />
-											</svg>
-											<span class="button__label">Watch Intro</span>
-										</button>
-									</div>
-								</div>
-								<div class="product__picture">
-									<picture>
-										<source
-											srcset="/images/product-4@1x.webp"
-											type="image/webp"
-										/>
-										<img
-											src="/images/product-4@1x.png"
-											alt="Buffalo Shoe"
-											class="product__image"
-										/>
-									</picture>
-								</div>
-							</div>
-						</div>
-						<div class="product__pagination"></div>
-					</div>
-				</section>
-			</main>
-		</div>
-		<div class="modal">
-			<div class="modal__content">
-				<button class="modal__close icon-button">
-					<svg class="icon-button__icon">
-						<use href="/icons/icon-sprite.svg#close" />
-					</svg>
-				</button>
-				<div class="modal__video" id="video">
-					<div class="modal__error">
-						<h2 class="modal__error-title">Ошибка</h2>
-						<p class="modal__error-description">
-							Во время загрузки видеопроигрывателя возникла ошибка <br />
-							Повторите попытку позже
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
-</html>
+<!DOCTYPE html><html lang="en">	<head>		<meta charset="UTF-8">		<meta http-equiv="X-UA-Compatible" content="IE=edge">		<meta name="viewport" content="width=device-width, initial-scale=1.0">		<meta name="description" content="Simple product page for Shoe Shop Website. For education purpose">		<title>Shoe Website Product Page</title>		<link rel="stylesheet" href="/styles.css">		<script src="https://www.youtube.com/iframe_api" async></script>		<script src="/script.js" defer></script><link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+<link rel="manifest" href="/icons/site.webmanifest">
+<link rel="shortcut icon" href="/icons/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/icons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"></head>	<body>		<div class="container">			<h1 class="visually-hidden">Zainoo Shoe store</h1>			<header class="header">				<a href="/" class="header__logo">					<img src="/images/logo.png" alt="Zainoo company logo" class="header__logo-image">				</a>				<nav class="header__navigation">					<button class="header__sidemenu-button">Explore</button>					<div class="header__tools">						<button class="header__tool-button icon-button" aria-label="Search" title="Search">							<svg class="icon-button__icon">								<use href="/icons/icon-sprite.svg#search"/>							</svg>						</button>						<button class="header__tool-button icon-button" aria-label="Cart" title="Cart">							<svg class="icon-button__icon">								<use href="/icons/icon-sprite.svg#cart"/>							</svg>							<span class="header__cart-badge badge">1</span>						</button>						<button class="header__tool-button icon-button" aria-label="User profile" title="User profile">							<svg class="icon-button__icon">								<use href="/icons/icon-sprite.svg#user"/>							</svg>						</button>					</div>					<div class="header__menu">						<div class="header__links">							<a href="/" class="header__link-item">manufacturing</a>							<a href="/" class="header__link-item">packaging</a>							<a href="/" class="header__link-item">team</a>						</div>						<div class="header__socials">							<a href="/" class="header__social-link">fb</a>							<a href="/" class="header__social-link">tw</a>							<a href="/" class="header__social-link">in</a>						</div>					</div>				</nav>				<button class="header__menu-button" aria-label="Navigation menu">					<span></span><span></span><span></span>				</button>			</header>			<main>				<section class="sidebar">					<h2 class="visually-hidden">Sidebar menu</h2>					<button class="sidebar__close icon-button" aria-label="Close sidebar">						<svg class="icon-button__icon">							<use href="/icons/icon-sprite.svg#close"/>						</svg>					</button>					<nav class="sidebar__menu">						<a href="/" class="sidebar__link">Shoes</a>						<a href="/" class="sidebar__link">Bags</a>						<a href="/" class="sidebar__link sidebar__link--new">Accessories</a>						<a href="/" class="sidebar__link">Support</a>					</nav>					<div class="sidebar__info">						<div class="sidebar__slogan">							<div class="sidebar__col sidebar__col--inversed">								Extra <br>								Care							</div>							<div class="sidebar__col-white">								Foot <br>								Tech							</div>						</div>						<div class="sidebar__more">							<a href="/" class="sidebar__more-link">learn more</a>						</div>					</div>					<div class="sidebar__scroll-notice">Scroll down</div>				</section>				<section class="product">					<div class="product__carousel">						<button class="								product__carousel-button product__carousel-button--prev								icon-button							" aria-label="Previous product">							<svg class="icon-button__icon">								<use href="/icons/icon-sprite.svg#left"/>							</svg>						</button>						<button class="								product__carousel-button product__carousel-button--next								icon-button							" aria-label="Next product">							<svg class="icon-button__icon">								<use href="/icons/icon-sprite.svg#right"/>							</svg>						</button>						<div class="product__carousel-items">							<div class="product__item">								<div class="product__info">									<div class="product__about">The best looks; Top Comfort</div>									<h2 class="product__title">Comfy Maxer</h2>									<p class="product__description">										Our shoes fuse together an insole that cushions every move,										laces that you’ll never need to tie again, and an										odor-fighting copper thread lining.									</p>									<div class="product__buttons">										<button class="product__add-to-cart button" data-add-to-cart>											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#bag"/>											</svg>											<span class="button__label">Add To Cart</span>										</button>										<button class="product__watch button" data-video="9_Hb6Pgf6KA">											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#play"/>											</svg>											<span class="button__label">Watch Intro</span>										</button>									</div>								</div>								<div class="product__number">94</div>								<div class="product__picture">									<picture>										<source srcset="/images/product-1@1x.webp" type="image/webp">										<img src="/images/product-1@1x.png" alt="Comfi Maxer Shoe" class="product__image">									</picture>								</div>							</div>							<div class="product__item">								<div class="product__info">									<div class="product__about">Think smart, look amazing</div>									<h2 class="product__title">Adidas Original</h2>									<p class="product__description">										Adidas is in fact recognised as a synonym for sneakers, as										the most popular brand that produces this kind of shoes. And										no wonder - the German brand has been manufacturing top										quality sports shoes with unique design for nearly one										hundred years.									</p>									<div class="product__buttons">										<button class="product__add-to-cart button" data-add-to-cart>											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#bag"/>											</svg>											<span class="button__label">Add To Cart</span>										</button>										<button class="product__watch button" data-video="9jtkNI4ybHI">											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#play"/>											</svg>											<span class="button__label">Watch Intro</span>										</button>									</div>								</div>								<div class="product__number">75</div>								<div class="product__picture">									<picture>										<source srcset="/images/product-2@1x.webp" type="image/webp">										<img src="/images/product-2@1x.png" alt="Adidas Original Shoe" class="product__image">									</picture>								</div>							</div>							<div class="product__item">								<div class="product__info">									<div class="product__about">Bring power to your steps</div>									<h2 class="product__title">Nike</h2>									<p class="product__description">										Nike is one of the global brands that seem an inherent part										of the contemporary sports fashion and footwear market.										Unique design and high quality of products mean that Nike										has a large group of loyal fans both among professional										sports performers and amateurs.									</p>									<div class="product__buttons">										<button class="product__add-to-cart button" data-add-to-cart>											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#bag"/>											</svg>											<span class="button__label">Add To Cart</span>										</button>										<button class="product__watch button" data-video="KUETy2wFjyk">											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#play"/>											</svg>											<span class="button__label">Watch Intro</span>										</button>									</div>								</div>								<div class="product__number">87</div>								<div class="product__picture">									<picture>										<source srcset="/images/product-3@1x.webp" type="image/webp">										<img src="/images/product-3@1x.png" alt="Nike Shoe" class="product__image">									</picture>								</div>							</div>							<div class="product__item">								<div class="product__info">									<div class="product__about">										You will be able to go anywhere									</div>									<h2 class="product__title">Buffalo</h2>									<p class="product__description">										Do you live streetstyle, but have a feeling that all										sneakers look similar? This means you are yet to discover										Buffalo London! This brand offers unique city shoes you just										can’t miss.									</p>									<div class="product__buttons">										<button class="product__add-to-cart button" data-add-to-cart>											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#bag"/>											</svg>											<span class="button__label">Add To Cart</span>										</button>										<button class="product__watch button" data-video="R978P6kINf8">											<svg class="button__icon">												<use href="/icons/icon-sprite.svg#play"/>											</svg>											<span class="button__label">Watch Intro</span>										</button>									</div>								</div>								<div class="product__number">62</div>								<div class="product__picture">									<picture>										<source srcset="/images/product-4@1x.webp" type="image/webp">										<img src="/images/product-4@1x.png" alt="Buffalo Shoe" class="product__image">									</picture>								</div>							</div>						</div>						<div class="product__pagination"></div>					</div>				</section>			</main>		</div>		<div class="modal">			<div class="modal__content">				<button class="modal__close icon-button">					<svg class="icon-button__icon">						<use href="/icons/icon-sprite.svg#close"/>					</svg>				</button>				<div class="modal__video" id="video">					<div class="modal__error">						<h2 class="modal__error-title">Ошибка</h2>						<p class="modal__error-description">							Во время загрузки видеопроигрывателя возникла ошибка <br>							Повторите попытку позже						</p>					</div>				</div>			</div>		</div>	</body></html>

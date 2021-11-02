@@ -42,3 +42,12 @@
 	font-weight: 400;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "Avenir";
+	src: url("../fonts/avenir-black.woff2") format("woff2"),
+		url("../fonts/avenir-black.woff") format("woff");
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}

@@ -178,6 +178,25 @@
 		}
 	}
 
+	&__number {
+		position: absolute;
+		top: 0;
+		right: 15%;
+		color: rgba(236, 202, 123, 0.2);
+		font-family: "Avenir", sans-serif;
+		font-size: 43rem;
+		font-weight: 900;
+		line-height: 1;
+
+		@media screen and (max-width: $lg) {
+			font-size: 35rem;
+		}
+
+		@media screen and (max-width: $sm) {
+			display: none;
+		}
+	}
+
 	&__picture {
 		position: absolute;
 		bottom: 25px;
