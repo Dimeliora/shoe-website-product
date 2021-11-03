@@ -9,9 +9,9 @@
 		top: 0;
 		left: -100vw;
 		bottom: 0;
-		z-index: 500;
+		z-index: 1000;
 		justify-content: flex-start;
-		width: 50vw;
+		width: 100vw;
 		padding: 100px 20px 40px 50px;
 		background-color: #fff;
 		box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
@@ -20,17 +20,13 @@
 		&--active {
 			left: 0;
 		}
-
-		@media screen and (max-width: $sm) {
-			width: 75vw;
-		}
 	}
 
 	&__close {
 		position: absolute;
 		top: 20px;
 		right: 20px;
-		z-index: 500;
+		z-index: 1000;
 		display: none;
 
 		@media screen and (max-width: $md) {

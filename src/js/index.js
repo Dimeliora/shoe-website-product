@@ -11,7 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	carousel({
 		carouselSelector: ".product__carousel",
 		carouselItemsSelector: ".product__item",
-		paginationSelector: ".product__pagination",
+		paginationSelector: ".product__carousel-pagination",
 		prevSelector: ".product__carousel-button--prev",
 		nextSelector: ".product__carousel-button--next",
 	});
