@@ -11,11 +11,12 @@ export const carousel = ({
 	const nextBtn = carousel.querySelector(nextSelector);
 	const pagination = carousel.querySelector(paginationSelector);
 
-	let currentItemIdx = 1;
-
 	if (!carousel || carouselItems.length === 0) {
 		return;
 	}
+
+	let currentItemIdx = 1;
+	let isTransitionInProgress = false;
 
 	const updateItemIdx = (step) => {
 		currentItemIdx += step;
@@ -49,9 +50,12 @@ export const carousel = ({
 	};
 
 	const updateCarouselState = (step) => {
-		updateItemIdx(step);
-		changeItem();
-		updatePagination();
+		if (!isTransitionInProgress) {
+			updateItemIdx(step);
+			changeItem();
+			updatePagination();
+			isTransitionInProgress = true;
+		}
 	};
 
 	carousel.addEventListener("wheel", (e) => {
@@ -67,6 +71,12 @@ export const carousel = ({
 			updateCarouselState(1);
 		});
 	}
+
+	[...carouselItems].forEach((item) => {
+		item.addEventListener("transitionend", () => {
+			isTransitionInProgress = false;
+		});
+	});
 
 	updatePagination();
 	changeItem(currentItemIdx);

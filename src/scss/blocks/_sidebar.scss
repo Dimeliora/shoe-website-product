@@ -41,6 +41,10 @@
 	&__menu {
 		display: flex;
 		flex-direction: column;
+
+		@media screen and (max-height: $low) {
+			margin-bottom: 100px;
+		}
 	}
 
 	&__link {
@@ -72,6 +76,12 @@
 				font-size: 1.2rem;
 				line-height: 1.8rem;
 			}
+		}
+	}
+
+	&__info {
+		@media screen and (max-height: $low) {
+			margin-bottom: 100px;
 		}
 	}
 
