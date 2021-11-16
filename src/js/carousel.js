@@ -73,8 +73,10 @@ export const carousel = ({
 	}
 
 	[...carouselItems].forEach((item) => {
-		item.addEventListener("transitionend", () => {
-			isTransitionInProgress = false;
+		item.addEventListener("transitionend", (e) => {
+			if (e.target === item) {
+				isTransitionInProgress = false;
+			}
 		});
 	});
 
