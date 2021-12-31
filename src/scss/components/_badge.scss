@@ -1,18 +1,19 @@
 .badge {
-	position: absolute;
-	display: none;
-	align-items: center;
-	justify-content: center;
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #c40b0b;
-	color: #fff;
-	font-size: 1.4rem;
+    position: absolute;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #c40b0b;
+    color: #fff;
+    font-size: 1.4rem;
 
-	@media screen and (max-width: $sm) {
-		width: 16px;
-		height: 16px;
-		font-size: 1.1rem;
-	}
+    @media screen and (max-width: $sm) {
+        width: 16px;
+        height: 16px;
+        font-size: 1.1rem;
+    }
 }
