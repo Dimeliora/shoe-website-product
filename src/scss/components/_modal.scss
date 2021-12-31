@@ -51,7 +51,7 @@
 		background-color: transparent;
 		cursor: pointer;
 
-		&:focus-visible,
+		&:focus,
 		&:hover {
 			outline: none;
 
@@ -68,7 +68,7 @@
 		}
 
 		@media (max-width: $lg) {
-			&:focus-visible,
+			&:focus,
 			&:hover {
 				.icon-button__icon {
 					fill: #fff;

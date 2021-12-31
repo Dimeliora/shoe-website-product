@@ -1,25 +1,25 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-	height: 100%;
-	font-size: 62.5%;
+    height: 100%;
+    font-size: 62.5%;
 
-	@media screen and (max-width: $sm) {
-		height: auto;
-	}
+    @media screen and (max-width: $sm) {
+        height: auto;
+    }
 }
 
 body {
-	height: 100%;
-	margin: 0;
-	background: #f9f9f9 url("/images/bg.webp") no-repeat center / cover;
-	color: $black;
-	font-family: "Sofia Pro", sans-serif;
-	font-weight: 400;
+    height: 100%;
+    margin: 0;
+    background: #f9f9f9 url('/images/bg.webp') no-repeat center / cover;
+    color: $black;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 400;
 }
 
 h1,
@@ -28,54 +28,60 @@ h3,
 p,
 ul,
 li {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 main {
-	display: flex;
-	flex-grow: 1;
-	padding-top: 20px;
+    display: flex;
+    flex-grow: 1;
+    padding-top: 20px;
 
-	@media screen and (max-width: $sm) {
-		flex-grow: 0;
-	}
+    @media screen and (max-width: $sm) {
+        flex-grow: 0;
+    }
 }
 
-a:focus-visible,
-a:hover {
-	outline: none;
-	text-decoration: underline;
+a {
+    &:focus,
+    &:hover {
+        outline: none;
+        text-decoration: underline;
 
-	@media screen and (max-width: $sm) {
-		text-decoration: none;
-	}
+        @media screen and (max-width: $sm) {
+            text-decoration: none;
+        }
+    }
+}
+
+button:focus {
+    outline: none;
 }
 
 .container {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	padding: 40px 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px 50px;
 
-	@media screen and (max-width: $sm) {
-		padding: 20px;
-	}
+    @media screen and (max-width: $sm) {
+        padding: 20px;
+    }
 
-	@media screen and (max-height: $low) and (min-width: $sm) {
-		min-height: 100%;
-		height: auto;
-	}
+    @media screen and (max-height: $low) and (min-width: $sm) {
+        min-height: 100%;
+        height: auto;
+    }
 }
 
 .visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	border: 0;
-	clip: rect(0 0 0 0);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
